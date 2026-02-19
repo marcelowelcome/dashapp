@@ -562,7 +562,7 @@ export default function Dashboard() {
                             <XAxis type="number" tick={{ fontSize: 10, fill: T.muted }} tickLine={false} axisLine={false} tickFormatter={v => v + "%"} />
                             <YAxis type="category" dataKey="motivo" tick={{ fontSize: 10, fill: T.muted }} tickLine={false} axisLine={false} width={125} />
                             <Tooltip content={<CustomTooltip />} />
-                            <Bar dataKey="pct" name="Pct %" radius={[0, 3, 3, 0]} barSize={12} fill={T.rose} label={{ position: "right", fontSize: 10, fill: T.muted, formatter: (v: number) => `${v}%` }} />
+                            <Bar dataKey="pct" name="Pct %" radius={[0, 3, 3, 0]} barSize={12} fill={T.rose} label={{ position: "right", fontSize: 10, fill: T.muted, formatter: (v: any) => `${v}%` }} />
                         </BarChart>
                     </ResponsiveContainer>
                 </div>
